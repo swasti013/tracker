@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+
+        <title> expensetracker</title>
+    </head>
+
+        <body>
+            <form onsubmit="savetolocalstorage(event)">
+                <label>Choose expenseament : </label>
+                <input type="number" name="exp_track" id="exp_track">
+                <label>Choose description : </label>
+                <input type="text" name="desc" id="desc">
+                <label> Choose a category : </label>
+                <select name="category" id="category">
+                    <option value="on_vacation"> on vacation</option>
+                    <option value="food">food</option>
+                    <option value="fuel">fuel</option>
+                    <option value="movies">movies</option>
+
+                </select>
+                <button type="submit">Add Expense</button>
+
+        </form>
+        <ul id="userlist"></ul>
+        <script src="expense.js"></script>
+        
+    </body>
+    
+    
+
+</html>
